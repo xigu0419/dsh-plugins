@@ -1,0 +1,23 @@
+{
+  "name": "@local/dsh-deepseek-peak-hint",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Sidebar block showing the DeepSeek API peak/off-peak billing window (Beijing time) with a countdown, seated directly above the usage plugin's 今日消费 card.",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}
