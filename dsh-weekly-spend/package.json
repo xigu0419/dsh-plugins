@@ -1,0 +1,23 @@
+{
+  "name": "@local/dsh-weekly-spend",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Web 界面插件：在侧边栏「今日消费」卡片内部、金额下方追加一行「本周消费总量」（自然周，周一为一周起点，含今天）。",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  }
+}

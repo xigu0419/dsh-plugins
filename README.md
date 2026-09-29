@@ -8,6 +8,7 @@ DeepSeek Harness（DSH）Web 界面插件合集。
 | 插件 | 说明 | 状态 |
 |---|---|---|
 | [dsh-deepseek-peak-hint](./dsh-deepseek-peak-hint) | 在左侧边栏底部、**「今日消费」卡片正上方**常驻提示，显示 DeepSeek API 当前处于高峰还是空闲计价时段，并倒计时到下一次切换。 | ✅ 可用 |
+| [dsh-weekly-spend](./dsh-weekly-spend) | 在「今日消费」卡片**内部**追加一行，显示本周消费总量（自然周，周一为一周起点，含今天），数值来自 `GET /api/dsh-usage/overview`。 | ✅ 可用 |
 
 ## 安装方式
 

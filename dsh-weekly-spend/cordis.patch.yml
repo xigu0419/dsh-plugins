@@ -1,0 +1,3 @@
+- insert:
+    - id: dsh-weekly-spend
+      name: '@local/dsh-weekly-spend'
